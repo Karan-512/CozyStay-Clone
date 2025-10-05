@@ -9,13 +9,14 @@ body h1 {
 #hero {
     background: url("..\\images\\documentation-hero-bg.jpg") no-repeat center center;
     background-size: cover;
-    height: 70vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: relative;
     overflow: hidden;
     color: white;
+    padding: 5%;
 }
 
 .header {
