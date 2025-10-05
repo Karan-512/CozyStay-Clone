@@ -126,7 +126,7 @@ body h1 {
 #home-content {
     background-color: whitesmoke;
     width: 100%;
-    padding: 80px;
+    padding: 5%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     flex-wrap: wrap;
