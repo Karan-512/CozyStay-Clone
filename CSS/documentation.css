@@ -1,0 +1,360 @@
+* {
+    font-family: serif;
+}
+
+body h1 {
+    font-size: 65px;
+}
+
+#hero {
+    background: url("..\\images\\documentation-hero-bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: start;
+    padding: 30px 50px;
+    position: relative;
+}
+
+#hero a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+#hero a:hover {
+    text-decoration: none;
+    border-bottom-color: #4169E1;
+
+}
+
+
+.logo,
+.navbar {
+    width: 100%;
+}
+
+.hero-content {
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+}
+
+.ul {
+    width: 5%;
+    border-bottom: #4169E1;
+    border: 2px solid #4169E1;
+
+}
+
+.search-container {
+    display: flex;
+    width: 60%;
+    margin: 50px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    flex-grow: 1;
+    /* Allows the input to take up most of the space */
+    padding: 20px 25px;
+    /* Generous padding for a large text box */
+    border: none;
+    font-size: 18px;
+    /* Clear and easy-to-read font size */
+    color: #333;
+    /* Match the background of the input to the visual */
+    background-color: white;
+    outline: none;
+    /* Removes the default focus outline */
+}
+
+.search-input::placeholder {
+    color: #a0a0a0;
+    /* Light gray color for the placeholder text */
+}
+
+.search-button {
+    background-color: white;
+    /* Match the background of the text box */
+    border: none;
+    padding: 0 25px;
+    cursor: pointer;
+    font-size: 24px;
+    /* Larger icon size */
+    color: #333;
+    /* Dark color for the icon */
+    display: flex;
+    align-items: center;
+    /* Vertically center the icon */
+    justify-content: center;
+}
+
+.search-button:hover {
+    color: #4169E1;
+    /* Example hover color */
+}
+
+.hero-content-btns {
+    width: 70%;
+}
+
+.hero-content-btns button {
+    margin: 5px;
+    border: 0.5px solid #4169E1;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+}
+
+
+#home-content {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+
+
+.article-widget {
+    margin: 20px 0;
+    width: 60%;
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.widget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.widget-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.widget-title .arrow {
+    font-weight: 400;
+    color: black;
+    margin-left: 5px;
+}
+
+.article-count {
+    background-color: #4169E1;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.article-list {
+    list-style: none;
+
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.article-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.article-list li:last-child {
+    border-bottom: none;
+}
+
+.article-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: block;
+    padding-left: 10px;
+    transition: color 0.2s;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.article-list a:hover {
+    color: #4169E1;
+    text-decoration: none;
+}
+
+.article-list .indicator {
+    margin-right: 5px;
+    font-size: 18px;
+    vertical-align: top;
+    line-height: 1;
+    color: #4169E1;
+}
+
+.view-all-link {
+    text-decoration: none;
+    color: #4169E1;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #4169E1;
+
+}
+
+.view-all-link:hover {
+    border-bottom-color: lightgrey;
+}
+
+#footer,
+.footer-sec-2 {
+    padding: 80px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    color: white;
+    padding: 80px;
+}
+
+.links,
+.footer-sec-2 {
+    width: 40%;
+    padding: 50px 0px;
+}
+
+.links {
+    align-self: start;
+}
+
+.footer-sec-2 {
+    padding: 0px;
+}
+
+.footer-sec-2 h4,
+.footer-sec-2 p {
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer-sec-2-1,
+.footer-sec-2-2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-sec-2-2 a {
+    color: white;
+}
+
+.footer-sec-2-2 a:hover {
+    color: #4169E1;
+    text-decoration: none;
+}
+
+.links a {
+    color: #fff;
+    font-size: 46px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+}
+
+.links a:hover {
+    text-decoration: none;
+}
+
+
+#ticket {
+    width: 100%;
+    height: 15vh;
+    background-color: #212121;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.ticket-btn {
+    align-items: center;
+}
+
+.ticket-btn button {
+    padding: 10px 20px;
+    background-color: #4169E1;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+.ticket-txt p {
+    font-family: serif;
+    font-weight: 500;
+}
+
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width:1200px) {
+    .logo {
+        width: 20%;
+    }
+
+    .navbar {
+        width: 70%;
+        justify-self: end;
+    }
+
+    .navbar .nav.nav-underline {
+        position: absolute;
+        right: 50px;
+        align-self: start;
+    }
+
+    .header span {
+        width: 10%;
+    }
+
+    .links,
+    .footer-sec-2 {
+        width: 40%;
+    }
+
+    .footer-sec-2-1,
+    .footer-sec-2-2 {
+        width: 47%;
+    }
+
+    .article-widget {
+        width: 30%;
+    }
+}

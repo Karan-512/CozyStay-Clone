@@ -1,0 +1,1878 @@
+#header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("..\\images\\mountain-hotel-bg.jpeg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.header,
+.header-contact,
+.contact,
+.header-nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 50px;
+    padding-top: 0px;
+}
+
+
+.header {
+    position: absolute;
+    top: 20px;
+    padding: 0;
+}
+
+#header a {
+    color: white;
+}
+
+.header-nav {
+    justify-content: space-between;
+    margin-top: 0
+}
+
+.contact,
+.address {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.contact p {
+    width: 100%;
+}
+
+.header-contact {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    border-bottom: 1px dotted #eee;
+}
+
+.header-nav {
+    margin: 50px;
+}
+
+.nav-item a {
+    color: white;
+}
+
+.nav-item a:active {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-item a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.reserve-btn button {
+    display: none;
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    width: 40%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.kpi {
+    width: 30%;
+}
+
+.header-content-kpis {
+    width: 70%;
+    justify-content: space-evenly
+}
+
+.kpi h2 {
+    font-size: 2rem;
+
+}
+
+
+.header-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    width: 60%;
+    align-items: center;
+    margin: 50px;
+}
+
+.header-content p {
+    width: 100%;
+    font-size: 1em;
+}
+
+.header-nav .navbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+.header-main,
+.header-content-kpis {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+}
+
+/* Section 1 */
+#section-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 50px 0px;
+}
+
+.section-title,
+.section-1-carousel {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    height: 35%;
+}
+
+.section-1-carousel {
+    height: 65%;
+    margin-bottom: 0;
+
+}
+
+.carousel-container {
+    overflow: hidden;
+    /* Essential: Hides off-screen images */
+    position: relative;
+    max-width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    /* Key: Allows track to grow to fit all images' natural widths */
+    transition: transform 0.5s ease-in-out;
+    /* Smooth slide effect */
+}
+
+.carousel-slide {
+    flex-shrink: 0;
+    width: auto;
+    /* Key: Allows the image to dictate the slide width */
+}
+
+.carousel-slide img {
+    /* Set a consistent height for a gallery look */
+    height: 60vh;
+    /* Adjust this height as needed */
+    width: auto;
+    /* Maintains natural aspect ratio */
+    display: block;
+    object-fit: cover;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    opacity: 1;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.section-title {
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.section-title p {
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    color: #B99D75;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section-title h2 {
+    width: 80%;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+/* Section 2 */
+#section-2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-bottom: 100px;
+}
+
+#section-2 .section-title {
+    height: 35%;
+    padding-bottom: 0;
+
+}
+
+#section-2 h2 {
+    font-size: 4em;
+    font-weight: 200;
+}
+
+.section-2-img {
+    height: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.trip-card {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 100%);
+    background-size: fill;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.trip-card:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.trip-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay-border {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid #B99D75;
+    /* box-sizing: border-box; */
+    z-index: 4;
+
+}
+
+.overlay {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 100%);
+    z-index: 3;
+}
+
+.price-tag {
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    align-self: flex-start;
+}
+
+.content {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.content h2 {
+    font-size: 2em;
+}
+
+.category {
+    font-size: 0.9rem;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+.title {
+    font-size: 2em;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.discover-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid #B99D75;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+/* Section 3 */
+#section-3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-bottom: 100px;
+}
+
+#section-3 .section-title,
+#section-3 .section-title p,
+#section-3 .section-title h2 {
+    width: 100%;
+    text-align: left;
+}
+
+#section-3 .section-title {
+    padding: 0 80px;
+}
+
+.section-3-content,
+.essentials-text,
+.essentials-images,
+.list-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.essentials-images {
+    padding: 50px;
+}
+
+.essential-list {
+    width: 47%;
+}
+
+.imgdiv {
+    width: 30%;
+
+}
+
+.imgdiv img {
+    width: 60%;
+}
+
+.txtdiv {
+    width: 65%;
+}
+
+.txtdiv h4 {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+
+.ess-img {
+    justify-content: center;
+    width: 47%;
+    height: 100%;
+}
+
+.ess-img:nth-child(2) {
+    height: 95%;
+    position: relative;
+    top: 12.5px;
+}
+
+.ess-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* section 4
+#section-4 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #F1EBE3;
+    position: relative;
+    z-index: 0;
+}
+
+#section-4 .section-title,
+#section-4 .section-title p {
+    width: 100%;
+    text-align: left;
+}
+
+#section-4 .section-title div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#section-4 .section-title div h2 {
+    width: 100%;
+    align-items: left;
+    font-size: 4em;
+}
+
+#section-4 .section-title div h4 {
+    align-self: center;
+    width: 100%;
+    align-items: left;
+    font-size: 1.5em;
+}
+
+
+.search-bar-section {
+    width: 80%;
+    padding: 30px;
+    height: 15vh;
+    background-color: black;
+    position: relative;
+    top: -50px;
+    z-index: 1;
+    justify-self: center;
+    align-content: center;
+}
+
+.search-bar-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.search-item {
+    padding: 15px 30px;
+    border: 1px solid #B99D75;
+    border-radius: 5px;
+    color: white;
+}
+
+.check-availability-btn {
+    padding: 15px 30px;
+    background-color: #B99D75;
+    color: white;
+} */
+
+
+
+/* Section 5 */
+
+#section-5 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    height: auto;
+    padding-bottom: 50px;
+    background-color: #F1EBE3;
+}
+
+#section-5 .section-title p,
+#section-5 .section-title h2 {
+    width: 100%;
+}
+
+#section-5 .section-title {
+    padding-bottom: 0;
+}
+
+#section-5 .section-title h2 {
+    font-size: 3em;
+    width: 80%;
+}
+
+.section-4-cards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.activity-card {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 50px 0;
+}
+
+.card-image-wrapper {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 70%;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body-content a:hover {
+    text-decoration: none;
+    color: black;
+    border-bottom: none;
+    transition: all 0.3s ease-out;
+}
+
+.activity-card-overlay {
+    border: 1px solid #B99D75;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: 2;
+    width: 100%;
+    height: 70%;
+}
+
+.activity-card:hover .activity-card-overlay {
+    border: 1px solid #B99D75;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: -10px;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+.activity-card:hover img {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.activity-card img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.card-body-content {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.body-title {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 10px 0 15px 0;
+}
+
+.description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+.discover-more-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #B99D75;
+    padding-bottom: 2px;
+}
+
+
+.activity-card:nth-child(2) {
+    position: relative;
+    top: 50px;
+}
+
+
+
+
+/* Footer hero */
+#footer-hero {
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("..\\images\\snow-resort.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#footer-hero .section-title {
+    margin: 0px;
+    padding: 0
+}
+
+#footer-hero .section-title h2 {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#footer-hero .section-title p {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.footer-hero-search-item {
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.footer-hero-search-bar-wrapper,
+.footer-hero-search-item {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.footer-hero-search-item {
+    width: 70%;
+    border-bottom: 2px solid #B99D75;
+    background-color: transparent;
+    padding: 10px 0;
+
+}
+
+.check-availability-btn.footer-hero {
+    width: 50%;
+    border-bottom: none;
+    border-right: 3px solid #B99D75;
+    padding: 15px 30px;
+    margin: 20px 0;
+    background-color: #B99D75;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.search-icon {
+    width: 20%;
+}
+
+
+.search-icon {
+    color: #B99D75;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+}
+
+.search-icon img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.btn-text {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.label {
+    font-size: 1.5em;
+    width: 100%;
+    margin: 2px;
+}
+
+.value {
+    font-size: 0.9em;
+    width: 100%;
+}
+
+
+/* Footer */
+#footer,
+.footer-section-1 {
+    /* padding: auto; */
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10%;
+    color: white;
+}
+
+#footer {
+    height: auto;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+.cozystay {
+    width: 100%;
+    text-align: left;
+}
+
+.footer-1-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: start;
+    margin: 50px 0;
+}
+
+.reach-out,
+.newsletter {
+    width: 100%;
+}
+
+.reach-out h3 {
+    width: 100%;
+}
+
+.reach-out a {
+    color: white;
+    text-decoration: none;
+}
+
+.reach-out a[index="get-direction"] {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #B99D75;
+}
+
+.reach-out a[index="get-direction"]:hover {
+    color: #B99D75;
+    text-decoration: none;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.reach-out a:hover {
+    text-decoration: none;
+    color: #B99D75;
+    transition: all 0.3s ease-in-out;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ffffff;
+}
+
+.email-input {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 5px 10px 10px 0;
+    font-family: sans-serif;
+}
+
+.email-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.1rem;
+}
+
+.subscribe-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 5px 0 10px 15px;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s ease-in-out;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.social-icons-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons-list i {
+    font-family: 'Font Awesome 6 Brands', sans-serif;
+}
+
+.footer-section-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 50px;
+    border-top: 0.1px dotted whitesmoke;
+    padding-bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 10px
+}
+
+.footer-section-2-btns span {
+    margin: 0 10px;
+}
+
+.footer-section-2-btns a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section-2-btns a:hover {
+    color: #B99D75;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .trip-card {
+        width: 45%;
+    }
+
+    .activity-card {
+        width: 28%;
+    }
+
+    .reach-out,
+    .newsletter {
+        width: 47%;
+    }
+
+    .contact {
+        width: 45%;
+    }
+
+    .address {
+        width: 25%;
+        text-align: center;
+    }
+
+    .reserve-btn button {
+        display: flex;
+    }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .trip-card {
+        width: 23%;
+        margin: 0 5px;
+    }
+
+    .trip-card[index="2"] {
+        position: relative;
+        top: 25px;
+    }
+
+    .essentials-text,
+    .essentials-images {
+        width: 45%;
+    }
+
+    /* 
+    #section-4 .section-title div h2 {
+        width: 50%;
+        align-items: left;
+        font-size: 4em;
+    }
+
+    #section-4 .section-title div h4 {
+        align-self: center;
+        width: 30%;
+        align-items: right;
+        font-size: 2em;
+    } */
+
+
+    .footer-hero-search-item {
+        width: 23%;
+        border-bottom: none;
+        border-right: 3px solid #B99D75;
+        background-color: transparent;
+    }
+
+    .check-availability-btn.footer-hero {
+        width: 23%;
+    }
+
+    .cozystay {
+        width: 30%;
+    }
+
+    .footer-1-2 {
+        width: 65%;
+        justify-self: start;
+    }
+
+    .footer-1-2 {
+        margin: 0;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .header-nav .navbar {
+        display: flex;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .header-content h1 {
+        font-size: 5rem;
+    }
+
+    .contact p {
+        width: auto
+    }
+
+    .header-contact {
+        display: flex;
+    }
+
+}
+
+
+
+
+
+
+
+/* HIKING PAGE */
+
+#header[index="hiking"] {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hiking-bg-2.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.section-1-imgs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.section-title[index="hiking"] {
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+}
+
+.section-title[index="hiking"] p {
+    font-size: 0.9rem;
+}
+
+.section1-img-item {
+    width: 47%;
+
+}
+
+.section1-img-item img {
+    width: 100%;
+}
+
+#hiking-section-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/camping.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    color: white;
+    padding: 10vh
+}
+
+#hiking-section-2 .section-title {
+    width: 80%;
+}
+
+#hiking-section-2 .section-title p:nth-child(3) {
+    width: 100%;
+}
+
+#hiking-section-2 .section-title h2 {
+    font-size: 3em;
+}
+
+#hiking-section-4 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+}
+
+#hiking-section-4 .section-title h2 {
+    width: 100%;
+}
+
+.contact-sec4 {
+    width: 100%;
+    padding: 0 50px;
+}
+
+.contact-sec4 p {
+    color: black;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.contact-sec4 a {
+    color: black;
+}
+
+.contact-sec4 a:hover {
+    color: #B99D75;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.section4-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section4-images img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* PLAY PAGE */
+#header[index="play"] {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/para-gliding-bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#play-section-1 {
+    width: 100%;
+    padding: 5%;
+    height: auto;
+}
+
+#play-section-1 h2 {
+    font-size: 2.5em;
+    font-family: serif;
+}
+
+#play-section-1 .section-title h2 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.activities {
+    width: 100%;
+    padding: 0px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 120vh;
+    padding: 100px 0;
+}
+
+.activity-container {
+    width: 100%;
+    background-color: #0E0E0E;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    /* position: absolute;
+    right: 5%;
+    z-index: 1; */
+    padding: 50px 0;
+    height: auto;
+}
+
+.activity-container .section-title {
+    margin: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.activity-container .section-title h2 {
+    width: 100%;
+}
+
+.discover-btn {
+    width: auto;
+}
+
+.discover-btn button {
+    width: 100%;
+    padding: 15px 40px;
+    color: white;
+    border: 1px solid #B99D75;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+
+.header-content-kpis {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 20px;
+}
+
+.kpi {
+    width: 30%;
+}
+
+.kpi h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.kpi p {
+    font-size: 0.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #B99D75;
+    letter-spacing: 1.1px;
+}
+
+.img-container {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+
+}
+
+.img-container img {
+    height: 90%;
+    width: 100%;
+
+
+}
+
+#splash {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#splash img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* SUMMER ACTIVTIES PAGE */
+#header[index="summer-activities"] {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/mh-carousel-2.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#summer-activities-section-1 {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    padding-top: 80px;
+}
+
+.section-title[index="summer-activities"] {
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+.section-title[index="summer-activities"] h2 {
+    width: 90%;
+    font-size: 2.5em;
+    /* border: 1px solid black; */
+    justify-self: center;
+
+}
+
+.section-title[index="summer-activities"] p {
+    width: 90%;
+    margin: 15px 0;
+    justify-self: center;
+}
+
+.summer-activities-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 30px 10%;
+    height: auto;
+    column-gap: 50px;
+    margin-top: 0;
+    align-items: center;
+}
+
+.trip-card[index="summer-activities"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    /* covers bottom half */
+    background: linear-gradient(to top, rgba(0, 100, 0, 1), transparent);
+    z-index: 1;
+}
+
+.trip-card[index="summer-activities"],
+.summer-activities-text {
+    width: 100%;
+    height: 50%;
+}
+
+.trip-card[index="summer-activities"] img {
+    width: 100%;
+    height: 100%;
+}
+
+.summer-activities-bullets ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.summer-activities-bullets ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.summer-activities-bullets ul li::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #D2B48C;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.summer-activities-btn {
+    width: auto;
+}
+
+.summer-activities-btn button {
+    background-color: transparent;
+    color: black;
+    font-weight: 100;
+    font-size: 1.1em;
+    padding: 15px 40px;
+    border: 1px solid #B99D75;
+}
+
+.summer-activities-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.summer-activities-bullets {
+    width: 100%;
+}
+
+.summer-activities-text-1 {
+    width: 100%;
+    color: black;
+    font-family: serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+/* FAQ  */
+#FAQ {
+    width: 100%;
+    height: auto;
+    padding: 100px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+
+.FAQ-img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    object-fit: scale-down;
+}
+
+.FAQ-text {
+    width: 100%;
+    padding: 30px;
+}
+
+
+.FAQ-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.FAQ-text {
+
+    background-color: #101010;
+}
+
+
+#more-summer-activities {
+    width: 100%;
+    padding: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    height: auto;
+    padding-top: 50px;
+    margin-top: 0;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+.msd-title,
+.msd-images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.msd-images {
+    gap: 30px;
+}
+
+.msd-title p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+}
+
+.msd-title p:first-of-type {
+    color: #B99D75;
+    letter-spacing: 1.1px;
+    font-size: 0.9em;
+}
+
+.msd-title p:last-child {
+    font-size: 1.1em;
+}
+
+.msd-title h2 {
+    font-size: 3em;
+}
+
+.msd-images .trip-card {
+    width: 100%;
+    height: 90vh;
+}
+
+#accordionExample {
+    background-color: #101010;
+    font-size: 16px;
+    color: white;
+    border-radius: 0px;
+    width: 70%;
+}
+
+.accordion .card {
+    border: 0px solid #eee;
+}
+
+.card .card-header {
+    background-color: #101010;
+    border: none;
+}
+
+.btn.btn-link.btn-block.text-left.collapsed:hover {
+    color: #D2B48C;
+    text-decoration: none;
+
+}
+
+.btn.btn-link.btn-block.text-left {
+    font-size: 18px;
+    color: white;
+    font-family: serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#accordionExample .card-body {
+    background-color: #101010;
+    color: white;
+    font-size: 1.1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.FAQ-text p {
+    color: #B99D75;
+    font-size: 0.9em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+
+.FAQ-text h2[index="heading"] {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 20px;
+    border-bottom: 1.5px solid white;
+}
+
+
+
+
+/* WINTER ACTIVITIES PAGE */
+#header[index="winter-activities"] {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/winter-activitiy-bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#play-section-1[index="wa"] {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    height: auto;
+    padding: 5%;
+    border: 2px solid pink;
+}
+
+
+
+#play-section-1-wa {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 5%;
+    height: auto;
+}
+
+.activities-wa,
+.activity-container-wa {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+}
+
+.activities-wa {
+    margin: 50px 0;
+}
+
+.activity-container-wa {
+    padding: 5%;
+    background-color: #0E0E0E;
+    height: auto;
+    color: white;
+    margin-top: 0
+}
+
+.img-container-wa {
+    width: 100%;
+    align-content: end;
+}
+
+.img-container-wa img {
+    width: 100%;
+    height: 90%;
+}
+
+.activity-container-wa button {
+    color: white;
+}
+
+.activity-container-wa .section-title {
+    height: auto;
+    padding: 0;
+    text-align: start;
+}
+
+.activity-container-wa .section-title h2,
+.activity-container-wa .section-title p {
+    text-align: start;
+    width: 100%;
+}
+
+
+#wa-amenities {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #101010;
+    color: white;
+}
+
+
+#wa-amenities .section-title h2 {
+    width: 100%;
+}
+
+#wa-amenities .section-title p:first-child {
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+
+#wa-amenities .section-title {
+    padding-bottom: 0;
+}
+
+#wa-amenities .section-title,
+.accordionExample {
+    width: 100%;
+}
+
+#accordionExample button {
+    font-size: 1.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 0.5px solid #333;
+}
+
+
+#wa-splash {
+    width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 50px;
+    background-color: #101010;
+    height: auto;
+    gap: 0;
+}
+
+#wa-splash div {
+    height: 95%;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#wa-splash div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+#wa-splash div:hover::after{
+    opacity: 0.2;
+}
+
+
+#wa-splash>div>img {
+    height: 100%;
+    width: 100%;
+}
+
+
+@media only screen and (min-width:768px) {
+
+    .trip-card[index="summer-activities"],
+    .summer-activities-text {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .section-title[index="hiking"] h2 {
+        font-size: 5rem;
+    }
+
+    .section4-images {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    #splash {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .activity-container {
+        width: 45%;
+        position: absolute;
+        left: 5%;
+        top: 15%;
+        z-index: 2;
+    }
+
+    .img-container {
+        justify-self: right;
+        width: 60%;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+    }
+
+
+    .activity-container-wa {
+        width: 45%;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        z-index: 2;
+    }
+
+    .img-container-wa {
+        width: 60%;
+        height: 100vh;
+        display: block;
+        position: relative;
+        z-index: 1;
+        left: 0%;
+    }
+
+    .activity-container-wa[index="2"] {
+        width: 45%;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        z-index: 2;
+    }
+
+    .img-container-wa[index="2"] {
+        width: 60%;
+        height: 100vh;
+        display: block;
+        position: relative;
+        z-index: 1;
+        left: 40%;
+    }
+
+
+    .activity-container[index="2"] {
+        width: 45%;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        z-index: 2;
+    }
+
+    .img-container[index="2"] {
+        justify-self: left;
+        width: 60%;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+    }
+
+    .trip-card[index="summer-activities"],
+    .summer-activities-text {
+        width: 47%;
+
+    }
+
+    .trip-card[index="summer-activities"] {
+        height: 80%;
+    }
+
+    #FAQ {
+        height: 100vh;
+    }
+
+    .FAQ-img,
+    .FAQ-text {
+        width: 50%;
+        height: 100%;
+    }
+
+    .section-title[index="summer-activities"] h2,
+    .section-title[index="summer-activities"] p {
+        width: 60%;
+    }
+
+    .trip-card[index="summer-activities"] img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .msd-images .trip-card {
+        width: 30%;
+        height: 50vh;
+    }
+
+    #wa-amenities .section-title,
+    #accordionExample {
+        width: 47%;
+        text-align: start;
+        justify-self: start;
+    }
+
+    #wa-amenities .section-title {
+        justify-items: start;
+    }
+
+    #wa-splash {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
