@@ -1189,7 +1189,7 @@
 #play-section-1 .section-title h2 {
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 2%;
     font-size: 2rem;
 }
 
@@ -1201,8 +1201,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 120vh;
-    padding: 100px 0;
+    height: auto;
+    padding: 5%;
 }
 
 .activity-container {
