@@ -1523,10 +1523,10 @@
 
 #accordionExample {
     background-color: #101010;
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
     border-radius: 0px;
-    width: 70%;
+    width: 100%;
 }
 
 .accordion .card {
@@ -1723,7 +1723,8 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-#wa-splash div:hover::after{
+
+#wa-splash div:hover::after {
     opacity: 0.2;
 }
 
@@ -1865,6 +1866,10 @@
         width: 47%;
         text-align: start;
         justify-self: start;
+    }
+
+    #accordionExample {
+        width: 100%;
     }
 
     #wa-amenities .section-title {
